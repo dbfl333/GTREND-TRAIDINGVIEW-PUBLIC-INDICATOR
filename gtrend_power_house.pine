@@ -1,14 +1,14 @@
+//@version=6
 // This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
 // © tvgunluis By LUIS GANDARA
-//@version=5
-indicator("GTREND POWER HOUSE", overlay = true, max_labels_count = 500, max_lines_count = 500, max_boxes_count = 500, max_bars_back = 500)
+indicator(title="GTREND", shorttitle="GTREND", overlay=true, max_labels_count=500, max_lines_count=500, max_boxes_count=500, max_bars_back=500)
 
 // =========================================================================
 // SECTION 1: SETTINGS & INPUTS
 // =========================================================================
 
 // --- G Trend Settings ---
-length          = input.int(title="ATR Period", defval=99, group="G Trend Settings")
+length          = input.int(title="ATR Period", defval=1, group="G Trend Settings")
 mult            = input.float(title="ATR Multiplier", step=0.1, defval=0.5, group="G Trend Settings")
 wicks           = input.bool(title="Take Wicks into Account ?", defval=false, group="G Trend Settings")
 showLabels      = input.bool(title="Show Buy/Sell Labels ?", defval=true, group="G Trend Settings")
@@ -784,7 +784,7 @@ shortStopPlot = plot(dir == 1 ? na : shortStop, title="Short Stop", style=plot.s
 plotshape(sellSignal ? shortStop : na, title="Short Stop Start", location=location.absolute, style=shape.circle, size=size.tiny, color=shortColor)
 plotshape(sellSignal and showLabels ? shortStop : na, title="Sell Label", text="Sell", location=location.absolute, style=shape.labeldown, size=size.tiny, color=shortColor, textcolor=color.white)
 
-midPricePlot = plot(ohlc4, title="", style=plot.style_circles, linewidth=0)
+midPricePlot = plot(ohlc4, title="", color=color.new(color.white, 100), linewidth=1, display=display.none)
 
 longFillColor = highlightState ? (dir == 1 ? color.new(longColor, gtrendTra) : noneColor) : noneColor
 shortFillColor = highlightState ? (dir == -1 ? color.new(shortColor, gtrendTra) : noneColor) : noneColor

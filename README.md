@@ -1,6 +1,6 @@
-# GTREND POWER HOUSE (TradingView Indicator)
+# GTREND (TradingView Indicator)
 
-Welcome to the **GTREND POWER HOUSE**, an all-in-one custom indicator for TradingView that merges the legendary G Trend strategy with modern Smart Money Concepts (SMC) and Session tracking.
+Welcome to **GTREND**, an all-in-one custom indicator for TradingView that merges the legendary G Trend strategy with modern Smart Money Concepts (SMC), Volume Activity, and Global Session tracking.
 
 ## 🚀 How to use for FREE
 
@@ -12,14 +12,21 @@ You can use this indicator completely for free on TradingView by copying the ope
 1. Copy the entire code from `gtrend_power_house.pine`.
 2. Open TradingView and navigate to the **Pine Editor** tab at the bottom of your screen.
 3. Delete any existing code in the editor and paste the copied code.
-4. Click **"Save"** and name it "GTREND POWER HOUSE".
+4. Click **"Save"** and name it "GTREND".
 5. Click **"Add to Chart"**.
+
+*(Note: This indicator is fully compatible with the new **Pine Script v6** requirements for public publishing.)*
+
+---
+
+## 📜 Changelog & Updates
+Want to see the latest bug fixes, tweaks, and features? Check out the **[CHANGELOG.md](CHANGELOG.md)** file for a full history of updates!
 
 ---
 
 ## 📈 Features Overview
 
-The GTREND POWER HOUSE is divided into multiple powerful modules, all seamlessly integrated into a single indicator to reduce chart clutter.
+The GTREND is divided into multiple powerful modules, all seamlessly integrated into a single indicator to reduce chart clutter.
 
 ### 1. G Trend Core Strategy
 The heart of the indicator. It uses an ATR (Average True Range) trailing stop to identify trend direction.
@@ -48,7 +55,7 @@ Visualize the global market sessions directly on your chart backgrounds.
 
 You can tweak the indicator to your exact trading style by clicking the gear icon ⚙️ on the indicator.
 
-- **ATR Period & Multiplier**: Adjusts the sensitivity of the G Trend signals. Lower values react faster to price changes.
+- **ATR Period & Multiplier**: Adjusts the sensitivity of the G Trend signals. Lower values react faster to price changes. *(Default: 1)*
 - **Take Wicks Into Account?**: Toggle this to calculate stops based on wicks rather than closing prices.
 - **Fill Transparency**: Dial down the transparency if you prefer subtle background fills for the trend states.
 - **Structure Sensitivity**: Modify how sensitive the script is to identifying major (External) and minor (Internal) structure breaks.
