@@ -6,9 +6,10 @@ Welcome to **GTREND** 🚀, an all-in-one custom indicator for TradingView that 
 
 ## 🚀 How to Use for FREE
 
-You can use this indicator completely for free on TradingView by copying the open-source script. 
+You can use this indicator completely for free on TradingView by adding it to your favorites or copying the open-source script.
 
-**[🔗 Click here to get the indicator script](https://github.com/dbfl333/GTREND-TRAIDINGVIEW-PUBLIC-INDICATOR/blob/main/gtrend_power_house.pine)**
+**[📊 View Indicator on TradingView](https://www.tradingview.com/script/utIrJYJS-G-TREND-GUNBOT/)**  
+**[🔗 Get the open-source Pine Script here](https://github.com/dbfl333/GTREND-TRAIDINGVIEW-PUBLIC-INDICATOR/blob/main/gtrend_power_house.pine)**
 
 ### 🛠️ Installation Guide:
 1. 📋 Copy the entire code from `gtrend_power_house.pine`.
